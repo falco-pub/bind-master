@@ -1,0 +1,25 @@
+$TTL 		1D
+@ 		1D	IN SOA ns root (
+				2017080301 ; serial
+				12H 	   ; refresh
+	 			60 	   ; retry
+ 				6W 	   ; expire
+				60 	   ; expire
+				)
+			NS 	ns
+			NS 	puck.nether.net.
+			NS	d.ns.buddyns.com.
+			NS 	h.ns.buddyns.com.
+			MX 	0  mxh
+			MX 	10 mx1
+
+			TXT     "v=spf2.0/pra,mfrom mx a:ssl.polytechnique.org ~all"
+			TXT	"v=spf1 mx a:ssl.polytechnique.org ~all"
+
+mxh 			A	94.23.221.34
+mx1 			A 	147.135.135.5
+
+ns 			A 	147.135.135.112
+
+hrimfaxi		A 	94.23.221.34
+
